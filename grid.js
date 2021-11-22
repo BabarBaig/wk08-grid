@@ -35,3 +35,8 @@ function toggle(position) {
   const element = document.getElementById(cellName);
   element.classList.toggle('on');
 }
+
+//don't change this line
+if (typeof module !== 'undefined') {
+  module.exports = { createGrid, move, toggle };
+}
